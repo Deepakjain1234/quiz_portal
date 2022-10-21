@@ -3,7 +3,7 @@ import "../Assets/CSS/portal.css"
 import QuestionPallet from './QuestionPallet';
 export default function QuestionPanel() {
 
-var countDownDate = new Date("Oct 20, 2022 23:00:00").getTime();
+var countDownDate = new Date("Oct 21, 2022 23:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
