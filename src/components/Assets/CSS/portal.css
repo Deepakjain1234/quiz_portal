@@ -1,4 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.ark-burger{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 3;
+    left: 13px;
+    top: 13px;
+
+}
+.ark-burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #D99343;
+    margin: 5px;
+  }
+  .toggle .ark-line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+   }
+   .toggle .ark-line2{
+   opacity: 0;
+   }
+   .toggle .ark-line3{
+   
+     transform: rotate(45deg) translate(-5px,-6px);
+   }
 .ark-time{
     width: 100vw;
     height: 89px;
@@ -415,7 +440,7 @@ color: #D8D8D8;
 }
 .ark-status-pallet{
     overflow-y: scroll ;
-   height: 400px;
+   height: 385px;
 }
 .ark-status-pallet::-webkit-scrollbar {
     width: 5px;
@@ -429,3 +454,495 @@ color: #D8D8D8;
     background: #D8D8D8;
     border-radius: 98px;  
   }
+
+ @media(min-width:1100px) and (max-width:1310px){
+    .ark-questionTab{
+        width: 60vw;
+    }
+    .ark-question-hr{
+        width: 55vw;
+    }
+    .ark-head{
+        font-size: 37px;
+        left: 20px;
+    }
+    .ark-info-txt{
+        font-size: 15px;
+    }
+    .ark-quest-box-allquestions{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-answered{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-unanswered{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-marked{
+        height: 56px;
+        width: 56px;
+    }
+ } 
+ @media (min-width:750px) and (max-width:1099.99px){
+    .ark-burger{
+        display: block;
+    }
+    .ark-time{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15vh;
+        align-items: center;
+        
+
+    }
+    .ark-head{
+        font-size: 42px;
+        top:19px;
+    }
+    .ark-status-panel{
+      
+            transform: translateX(-100vw);
+            transition: ease;
+            transition-duration: 0.5s;
+            padding-top: 79px;
+            z-index: 1 ;
+            position: absolute;
+            top: 0 ;
+            width: 100vw ;
+            height: 90vh ;
+        
+      
+    }
+    .ark-question-box{
+        width: 100vw;
+        height: 80vh;
+        
+    }
+    .ark-questionTab{
+        width: 85vw;
+        height: 75vh;
+        margin-top: 10px;
+    }
+    .ark-question-hr{
+        width: 70vw;
+    }
+    .ark-button-top{
+        right: -150px;
+        bottom: 30px;
+        width: 115px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .ark-danger-icon{
+        left: -120px;
+    }
+    .ark-report{
+        left: -90px;
+    }
+    .ark-icon{
+        right: 200px;
+        font-size: 25px;
+    }
+    .ark-timer{
+       right: 165px;
+       font-size: 19px;
+       bottom: 0;
+    }
+    .ark-head{
+        font-size: 25px;
+    }
+    .ark-bottom-sec {
+        width: 100vw;
+        top: 80vh;
+        height: 10vh;
+    }
+    .ark-status-pallet{
+        margin-top: 20px;
+        height: 338px;
+      }
+ }
+ @media (min-width:500px) and (max-width:749.99px){
+    .ark-burger{
+        display: block;
+    }
+    .ark-time{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15vh;
+        align-items: center;
+        
+
+    }
+    .ark-head{
+        font-size: 19px;
+        top: 27px;
+        left: 10px;
+    }
+    .ark-status-panel{
+        transform: translateX(-100vw);
+        transition: ease;
+        transition-duration: 0.5s;
+        padding-top: 79px;
+        z-index: 1 ;
+        position: absolute;
+        top: 0 ;
+        width: 100vw ;
+        height: 90vh ;
+    }
+    .ark-question-box{
+        width: 100vw;
+        height: 80vh;
+    }
+    .ark-questionTab{
+        width: 90vw;
+        margin-top: 16px;
+        font-size: 12px;
+        height: 75vh;
+    }
+    .ark-question-hr{
+        width: 80vw;
+        margin-top: 13px;
+    }
+    .ark-button-top{
+        right: -82px;
+        bottom: 30px;
+        width: 115px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .ark-danger-icon{
+        left: -88px;
+        font-size: 18px;
+    }
+    .ark-report{
+        left: -63px;
+        font-size: 13px;
+        top: 10px;
+    }
+    .ark-icon{
+        right: 100px;
+        font-size: 24px;
+    }
+    .ark-timer{
+        right: 70px;
+        font-size: 17px;
+        top:1px;
+       bottom: 0;
+    }
+    .ark-bottom-sec {
+        width: 100vw;
+        height: 6vh;
+        top: 80vh;
+    }
+    .ark-bottom-button1{
+        margin-top: 7px;
+        font-size: 13px;
+    }
+    .ark-bottom-button2{
+        margin-top: 7px;
+        font-size: 13px;
+    }
+    .ark-bottom-button3{
+        margin-top: 7px;
+        font-size: 13px;
+    }
+    .ark-bottom-icon{
+        font-size: 15px;
+    }
+    .ark-question-title{
+        font-size: 19px;
+        margin-left: 35px;
+    }
+    .ark-question{
+        margin-left: 35px;
+    }
+    .ark-option-1{
+        margin-left: 35px;
+    }
+    .ark-option-2{
+        margin-left: 35px; 
+    }
+    .ark-option-3{
+        margin-left: 35px;
+    }
+    .ark-option-4{
+        margin-left: 35px;
+    }
+    .ark-option-icon{
+        font-size: 12px;
+        margin-top: 15.5px;
+    }
+    .ark-dot{      
+    bottom: 10px;
+    left: 2.1px;
+    width: 8px;
+    height: 8px;
+    }
+    .ark-info-txt{
+        font-size: 10px;
+    }
+    .ark-info-no{
+        font-size: 17px;
+        bottom: 23px;
+    }
+    .ark-quest-box-allquestions{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-answered{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-unanswered{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-marked{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-answered{
+        font-size: 11px;
+    }
+    .ark-marked{
+        font-size: 11px;
+    }
+    .ark-unanswered{
+        font-size: 11px;
+    }
+    .ark-dot-white{
+        top: 16px;
+    }
+    .ark-dot-green{
+        top: 16px;
+    }
+    .ark-dot-orange{
+        top: 16px;
+    }
+    .ark-answered-1{
+        font-size: 11px;
+    }
+    .ark-status-pallet{
+      margin-top: 65px;
+      height: 338px;
+    }
+    .ark-statuspanel-hr-2{
+        margin-top: 30px;
+    }
+    .ark-statuspanel-info{
+        margin-top: 30px;
+    }
+    .ark-quest-status{
+        margin-top: 30px;
+    }
+    .ark-status-pallet{
+        margin-top: 20px;
+        height: 338px;
+      }
+ }
+ .ark-status-panel-2{
+    opacity: 1;
+    transition: ease;
+    transition-duration: 0.5s;
+    transform: translateX(0px) !important; 
+    padding-top: 79px !important;
+    z-index: 1 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 100vw !important;
+    height: 90vh !important;
+    overflow-y: hidden !important;
+}
+
+ @media(max-width:499.9px){
+    .ark-burger{
+        display: block;
+    }
+    .ark-time{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 10vh;
+        align-items: center;
+        
+
+    }
+    .ark-status-panel{
+        transform: translateX(-500px);
+        transition: ease;
+        transition-duration: 0.5s;
+        padding-top: 79px;
+        z-index: 1 ;
+        position: absolute;
+        top: 0 ;
+        width: 100vw ;
+        height: 90vh ;
+       
+    }
+
+    .ark-head{
+        font-size: 14px;
+        top: 27px;
+        left: 10px;
+        
+    }
+   
+    .ark-question-box{
+        width: 100vw;
+        height: 85vh;
+    }
+    .ark-questionTab{
+        width: 90vw;
+        margin-top: 28px;
+        font-size: 10px;
+        height: 77vh;
+    }
+    .ark-question-hr{
+        width: 80vw;
+        margin-top: 13px;
+    }
+    .ark-button-top{
+        right: -62px;
+        bottom: 28px;
+        width: 95px;
+        height: 31px;
+        font-size: 10px;
+    }
+    .ark-danger-icon{
+        left: -60px;
+        font-size: 12px;
+        top: 20px;
+    }
+    .ark-report{
+        left: -42px;
+        font-size: 10px;
+        top: 3px;
+    }
+    .ark-icon{
+        right: 79px;
+        font-size: 20px;
+    }
+    .ark-timer{
+        right: 50px;
+        font-size: 12px;
+        top:1px;
+        bottom: 0;
+    }
+    .ark-bottom-sec {
+        width: 100vw;
+        height: 6vh;
+        top: 84vh;
+    }
+    .ark-bottom-button1{
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    .ark-bottom-button2{
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    .ark-bottom-button3{
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    .ark-bottom-icon{
+        font-size: 12px;
+    }
+    .ark-question-title{
+        font-size: 17px;
+        margin-left: 35px;
+    }
+    .ark-question{
+        margin-left: 35px;
+    }
+    .ark-option-1{
+        margin-left: 35px;
+    }
+    .ark-option-2{
+        margin-left: 35px; 
+    }
+    .ark-option-3{
+        margin-left: 35px;
+    }
+    .ark-option-4{
+        margin-left: 35px;
+    }
+    .ark-option-icon{
+        font-size: 12px;
+        margin-top: 15.5px;
+    }
+    .ark-options{
+        height: 50vh;
+    }
+    .ark-dot{      
+    bottom: 10px;
+    left: 2.1px;
+    width: 8px;
+    height: 8px;
+    }
+    .ark-info-txt{
+        font-size: 10px;
+    }
+    .ark-info-no{
+        font-size: 17px;
+        bottom: 23px;
+    }
+    .ark-quest-box-allquestions{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-answered{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-unanswered{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-quest-box-marked{
+        height: 56px;
+        width: 56px;
+    }
+    .ark-answered{
+        font-size: 11px;
+    }
+    .ark-marked{
+        font-size: 11px;
+    }
+    .ark-unanswered{
+        font-size: 11px;
+    }
+    .ark-dot-white{
+        top: 16px;
+    }
+    .ark-dot-green{
+        top: 16px;
+    }
+    .ark-dot-orange{
+        top: 16px;
+    }
+    .ark-answered-1{
+        font-size: 11px;
+    }
+    .ark-status-pallet{
+      margin-top: 65px;
+      height: 338px;
+    }
+    .ark-statuspanel-hr-2{
+        margin-top: 30px;
+    }
+    .ark-statuspanel-info{
+        margin-top: 30px;
+    }
+    .ark-quest-status{
+        margin-top: 30px;
+    }
+ }
+ @media (max-width:375px){
+    .ark-head{
+        font-size: 13px;
+        
+    }
+ }

@@ -1,9 +1,10 @@
 import React from 'react'
 import "../Assets/CSS/portal.css"
 import QuestionPallet from './QuestionPallet';
+
 export default function QuestionPanel() {
 
-var countDownDate = new Date("Oct 21, 2022 23:00:00").getTime();
+var countDownDate = new Date("Oct 22, 2022 23:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -18,12 +19,24 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+const toggleBurger = () =>{
+ const statusPanel = document.querySelector(".ark-status-panel");
+ statusPanel.classList.toggle("ark-status-panel-2");
+ document.getElementById('burger-ark').classList.toggle("toggle");
+
+}
+
 // const[questionNo,setQuestionNo]=useState(0);
   return (
     <>
+    <div id='burger-ark' className="ark-burger" onClick={toggleBurger}>
+          <div className="ark-line1"></div>
+          <div className="ark-line2"></div>
+          <div className="ark-line3"></div>
+        </div>
     <div className='ark-time'>
       <div className="arksec-1">
-      <h1 className='ark-head'>IPL Auction Quiz</h1>
+      <h6 className='ark-head'>IPL Auction Quiz</h6>
       </div>
       <div className="arksec-2">
         <div className="arksec-21">
