@@ -837,15 +837,16 @@ color: #D8D8D8;
     }
     .ark-bottom-button1{
         margin-top: 15px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .ark-bottom-button2{
         margin-top: 15px;
-        font-size: 10px;
+        font-size: 12px;
+        margin-left: 38px;
     }
     .ark-bottom-button3{
         margin-top: 15px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .ark-bottom-icon{
         font-size: 12px;
