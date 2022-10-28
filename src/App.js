@@ -1,7 +1,7 @@
 
 import './App.css';
-import QuestionPanel from './Components/quiz/QuestionPanel';
-import StatusPanel from './Components/quiz/StatusPanel';
+import QuestionPanel from './components/quiz/QuestionPanel';
+import StatusPanel from './components/quiz/StatusPanel';
 
 function App() {
   return (
